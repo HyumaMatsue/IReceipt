@@ -1,0 +1,75 @@
+@charset "utf-8";
+header{
+    height: 20%;
+    background-color: rgb(202, 202, 202);
+}
+.logo{
+    width: auto;
+    height:50px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.help{
+    width: 50px;
+    height:auto;
+    float:right;
+    margin-right: 10px;
+}
+
+.container {
+    display: grid; /* グリッドレイアウト */
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 600px;
+    grid-template-areas:
+        "sideTab main";
+}
+
+.sideTab{
+    grid-area: sideTab;
+    text-align: center;
+    background-color: red;
+}
+
+.main{
+    grid-area: main;
+    background-color: blue;
+
+    display: grid; /* グリッドレイアウト */
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 500px 350px;
+}
+
+.account{
+    border-bottom: 1px solid black;
+}
+.account_Img{
+    width: 100px;
+    height: auto;
+}
+
+.receptConf{
+    border-bottom: 1px solid black;
+}
+
+.receptConf_Img{
+    width: auto;
+    height: 50px;
+}
+
+.pointConf{
+    border-bottom: 1px solid black;
+}
+
+.pointConf_Img{
+    width: 50px;
+    height: auto;
+}
+
+.pointBorrow{
+    border-bottom: 1px solid black;
+}
+
+.pointNow__confDisplay{
+    background-color: aliceblue;
+}
